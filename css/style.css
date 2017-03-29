@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 html, body {
+  font-size: 62.5%;
+  background-color: #f9f8f6;
   margin: 0 auto;
   padding: 0;
-  font-size: 62.5%;
-  background-color: #f9f8f6; }
+  }
 
-p, li, dt, dd, th, td {
+p, dt, dd, th, td, li {
   font-size: 1.2rem; }
 
 a {
@@ -15,9 +16,6 @@ a {
 li {
   list-style: none; }
 
-.sns_sp,
-.img_sp {
-  display: none; }
 
 header {
   max-width: 940px;
@@ -42,8 +40,13 @@ header nav .pc_menu li {
       float: left;
       margin: 10px 10px 0 10px; }
 
-header .sp_menu_toggle {
+header .sp_menu_hg {
     display: none; }
+
+.sns_sp,
+.img_sp {
+      display: none; }
+
 
 .content {
   max-width: 940px;
@@ -90,8 +93,8 @@ header .sp_menu_toggle {
           width: 100%; }
 
 .left .new_item ul li box span {
-          display: block;
-          margin: 20px 0 10px; }
+    display: block;
+    margin: 20px 0 10px; }
 
 .left .popular_items h2 img {
     width: 100%;
@@ -130,12 +133,12 @@ header .sp_menu_toggle {
     margin-bottom: 40px; }
 
 .left .shopping_guide section {
-    float: left;
     width: 43.3%;
     height: 270px;
     background: #fff;
-    padding: 3.1%;
-    margin-right: 1%; }
+    padding: 3%;
+    margin-right: 1%;
+    float: left; }
 
 .left .shopping_guide section:last-child {
       margin-right: 0; }
@@ -144,11 +147,11 @@ header .sp_menu_toggle {
       font-size: 1.6rem;
       margin-bottom: 20px; }
 
-.left .shopping_guide section dt {
-      font-weight: bold; }
-
 .left .shopping_guide section dd {
       margin: 15px 0 20px; }
+
+.left .shopping_guide section dt {
+            font-weight: bold; }
 
 .left .shopping_guide .kessai dl dd {
     margin: 13px 0 20px; }
@@ -157,8 +160,8 @@ header .sp_menu_toggle {
       width: 100%; }
 
 .right {
-  float: right;
-  width: 27.6%; }
+  width: 27.6%;
+  float: right; }
 
 .right .search {
     background: #fff;
@@ -198,8 +201,9 @@ header .sp_menu_toggle {
         text-decoration: none; }
 
 .right .content_nav ul {
+      margin: 0;
       padding: 0;
-      margin: 0; }
+       }
 
 .right .about {
     background: #fff;
@@ -305,7 +309,7 @@ footer .copy {
   header .logo {
       float: none;
       margin: 0 auto;
-      max-width: 197px; }
+      max-width: 200px; }
 
   header .logo img {
         width: 100%; }
@@ -367,21 +371,20 @@ footer .copy {
   .left .new_item ul li {
       width: 43.5%; }
 
-  .left .new_item ul li:nth-child(2n) {
-            margin-right: 0; }
-
   .left .new_item ul li:nth-child(3n) {
         margin-right: 1%; }
+
+  .left .new_item ul li:nth-child(2n) {
+        margin-right: 0; }
 
   .left .popular_items ul li {
       width: 43.5%; }
 
-  .left .popular_items ul li:nth-child(2n) {
-            margin-right: 0; }
-
   .left .popular_items ul li:nth-child(3n) {
         margin-right: 1%; }
 
+  .left .popular_items ul li:nth-child(2n) {
+        margin-right: 0; }
 
   .left .shopping_guide section {
       float: none;
@@ -543,12 +546,13 @@ footer .copy {
         margin: 20px 0 10px; }
 
 @media screen and (max-width: 768px) {
+
   .category_name h2 {
     width: 100%;
     margin-top: 20px; }
 
   .category_name ul li {
-    width: 43.5%; }
+    width: 43.3%; }
 
   .category_name ul li:nth-child(3n) {
       margin-right: 1%; }
@@ -564,7 +568,7 @@ footer .copy {
     margin: 25px 0 40px; }
 
   .title_recent_pro ul li {
-    width: 43.5%; }
+    width: 43.3%; }
 
   .title_recent_pro ul li:nth-child(3n) {
       margin-right: 1%; }
@@ -771,4 +775,6 @@ footer .copy {
         margin: 18px 0; }
 
   .products .products_text table th {
-      width: 25%; } }
+      width: 25%; }
+
+    }
